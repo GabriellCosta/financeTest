@@ -4,6 +4,16 @@ import com.google.gson.annotations.SerializedName;
 
 public final class CellVO {
 
+  public static final int TYPE_FIELD = 1;
+  public static final int TYPE_TEXT = 2;
+  public static final int TYPE_IMAGE = 3;
+  public static final int TYPE_CHECKBOX = 4;
+  public static final int TYPE_SEND = 5;
+
+  public static final int TYPEFIELD_TEXT = 1;
+  public static final int TYPEFIELD_TEL_NUMBER = 2;
+  public static final int TYPEFIELD_EMAIL = 3;
+
   @SerializedName("id") private final int id;
   @SerializedName("type") private final int type;
   @SerializedName("message") private final String message;
