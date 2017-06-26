@@ -1,0 +1,10 @@
+{
+  "id": 5,
+  "type": 3,
+  "message": "http://kitten-picture",
+  "typefield": null,
+  "hidden": false,
+  "topSpacing": 10.0,
+  "show": null,
+  "required": false
+}

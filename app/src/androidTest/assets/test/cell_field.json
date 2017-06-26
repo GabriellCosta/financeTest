@@ -1,0 +1,10 @@
+{
+  "id": 2,
+  "type": 1,
+  "message": "Nome completo",
+  "typefield": 1,
+  "hidden": false,
+  "topSpacing": 35.0,
+  "show": null,
+  "required": true
+}
