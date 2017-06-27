@@ -1,0 +1,10 @@
+{
+  "id": 7,
+  "type": 5,
+  "message": "Enviar",
+  "typefield": null,
+  "hidden": false,
+  "topSpacing": 10.0,
+  "show": null,
+  "required": true
+}
