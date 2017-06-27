@@ -1,0 +1,10 @@
+{
+  "id": 3,
+  "type": 4,
+  "message": "Gostaria de cadastrar meu email",
+  "typefield": null,
+  "hidden": false,
+  "topSpacing": 35.0,
+  "show": 4,
+  "required": false
+}
