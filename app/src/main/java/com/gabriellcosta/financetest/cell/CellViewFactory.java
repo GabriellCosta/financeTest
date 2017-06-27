@@ -32,15 +32,15 @@ public final class CellViewFactory {
     switch (cellVO.getType()) {
       case CellVO.TYPE_FIELD:
         context.get().setTheme(R.style.AppTheme);
-        return new TextInputLayout(context.get());
+        return CellViewParser.parse(new TextInputLayout(context.get()), cellVO);
       case CellVO.TYPE_TEXT:
-        return new TextView(context.get());
+        return CellViewParser.parse(new TextView(context.get()), cellVO);
       case CellVO.TYPE_IMAGE:
-        return new ImageView(context.get());
+        return CellViewParser.parse(new ImageView(context.get()), cellVO);
       case CellVO.TYPE_CHECKBOX:
-        return new CheckBox(context.get());
+        return CellViewParser.parse(new CheckBox(context.get()), cellVO);
       case CellVO.TYPE_SEND:
-        return new Button(context.get());
+        return CellViewParser.parse(new Button(context.get()), cellVO);
       default:
         return new View(context.get());
     }
