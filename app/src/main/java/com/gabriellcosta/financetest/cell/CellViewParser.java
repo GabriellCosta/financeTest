@@ -9,6 +9,7 @@ import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.gabriellcosta.financetest.entity.CellVO;
+import com.squareup.picasso.Picasso;
 
 final class CellViewParser {
 
@@ -32,6 +33,10 @@ final class CellViewParser {
   static ImageView parse(final ImageView view, final CellVO cellVO) {
     view.setContentDescription(cellVO.getMessage());
     view.setVisibility(cellVO.isHidden() ? View.GONE : View.VISIBLE);
+
+    Picasso.with(view.getContext())
+        .load(cellVO.getMessage());
+
     return view;
   }
 
